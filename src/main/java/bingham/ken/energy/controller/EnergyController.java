@@ -13,6 +13,11 @@ public class EnergyController {
     @Autowired
     EnergyService energyService;
 
+    /**
+     * pass kg of mass to calculate energy output
+     * @param mass
+     * @return
+     */
     @GetMapping(value="/mass/{mass}")
     @ResponseBody
     public Double getEnergy(@PathVariable("mass") Double mass) {
@@ -20,10 +25,15 @@ public class EnergyController {
         return energyService.calculateEnergy( mass );
     }
 
+    /**
+     * pass joules of energy to calculate mass
+     * @param energy
+     * @return
+     */
     @GetMapping(value="/energy/{energy}")
     @ResponseBody
     public Double getMass(@PathVariable("energy") Double energy) {
 
-        return energyService.calculateEnergy( energy );
+        return energyService.calculateMass( energy );
     }
 }
