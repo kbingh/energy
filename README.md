@@ -14,7 +14,7 @@ http://localhost:8080/mass/10.00  returns 8.9875517873681766E17
 
 URL to convert Mass to Energy
 
-http://localhost:8080/energy/10000.00
+http://localhost:8080/energy/10000.00 returns 1.1126500560536185E-13
 
 10000 joules of energy produces 1.1126500560536185E-13 kg of mass
 
