@@ -2,7 +2,6 @@
 
 Web Service using E=MC^2 to calculate energy in joules when passing a mass value in kg and vise versa.
 
-Getting Started
 Run web service as Spring Boot project.
 
 $ mvn spring-boot:run
